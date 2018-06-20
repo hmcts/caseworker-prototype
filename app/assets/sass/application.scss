@@ -1,0 +1,77 @@
+// Path to assets for use with the file-url function
+// in the govuk frontend toolkit"s url-helpers partial
+$path: "/public/images/";
+
+// Import GOV.UK Frontend
+@import "@govuk-frontend/frontend/all";
+
+// Patterns that aren"t in GOV.UK Frontend
+@import "patterns/check-your-answers";
+@import "patterns/related-items";
+
+// JUI styles
+@import "jui/all";
+
+mark.comment {
+  background-color: $govuk-orange;
+}
+
+.medium-toolbar-arrow-under:after {
+  border-color: #2f1e07 transparent transparent;
+}
+
+.medium-toolbar-arrow-over:before {
+  border-color: transparent transparent #2f1e07 ;
+}
+
+#subHeader{
+	height:50px;
+	background-color:#005EA5;
+	text-align:left;
+	padding-top:1px;
+padding-left:20px;}
+// text-align-last:right;
+
+#paragraphWhite{
+  color:#fff;
+font-weight:bold;}
+
+
+.govuk-c-table__cell-link {
+  @include govuk-font-regular-19;
+
+  padding: em($govuk-spacing-scale-2, 19px) em($govuk-spacing-scale-4, 19px) em($govuk-spacing-scale-2, 19px) 0;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: left;
+  padding-left: 0px;
+}
+
+
+//Inside payment classes//
+
+$table-padding: 10px;
+
+.govuk-c-table__cell-CCD-column1-test{
+  @include govuk-font-regular-19;
+  border-bottom: 1px solid $govuk-border-colour;
+  padding: $table-padding;
+  text-align: left;
+  width: 400px;
+}
+
+.govuk-c-table__cell-CCD-column2-test{
+  @include govuk-font-regular-19;
+  border-bottom: 1px solid $govuk-border-colour;
+  padding: $table-padding;
+  text-align: left;
+  width: 300px;
+
+}
+.govuk-c-table__cell-CCD-column3-test{
+  @include govuk-font-regular-19;
+  border-bottom: 1px solid $govuk-border-colour;
+  text-align: right;
+  padding: $table-padding;
+  padding-left: 0px;
+  width: 350px;
+}
