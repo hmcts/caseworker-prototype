@@ -13,12 +13,17 @@
 
   <main role="main" class="govuk-main-wrapper">
 
-      <p class="govuk-body govuk-!-font-weight-bold"> Case list</p>
+    <a class="govuk-body govuk-!-f-19" href="/case-list">
+      Case list
+    </a>
+
+    <br>
+    <br>
 
 
 
     <div id="subHeader">
-       <p id="paragraphWhite">2309-1129-5569-2669</p>
+       <p class="textWhite">2309-1129-5569-2669 - <strong class="bold-small">Jane Hartley vs Matt Hartley</strong></p>
        <!-- <p id="paragraphWhite">Print</p> -->
     </div>
 
@@ -60,7 +65,7 @@
         </div>
       {% endset %}
 
-      {% set paymentDetailsPanelHtml %}
+      {% set paymentPanelHtml %}
         <div class="govuk-prose-scope  govuk-!-pt-r6">
 
 
@@ -69,7 +74,7 @@
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="col">Payment reference</th>
-      <th class="govuk-table__header" scope="col">Date</th>
+      <th class="govuk-table__header" scope="col">Date created</th>
       <th class="govuk-table__header" scope="col">Payment method</th>
       <th class="govuk-table__header" scope="col">Payment amount</th>
       <th class="govuk-table__header" scope="col">Status</th>
@@ -80,54 +85,25 @@
 
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <th class="govuk-c-table__cell-link" scope="row"><a href="1RC-1521-1095-0964-3143.html">RC-1521-1095-0964-3143<a/></th>
-      <td class="govuk-table__cell ">14 Feb 2018</td>
+      <th class="govuk-c-table__cell-link" scope="row"><a href="/RC-1313-5251-7432-6214">RC-1313-5251-7432-6214<a/></th>
+      <td class="govuk-table__cell ">28 Jun 2018—12:28:45</td>
       <td class="govuk-table__cell ">Credit account</td>
       <td class="govuk-table__cell ">£215.00</td>
-      <td class="govuk-table__cell ">Sucess</td>
-      <td class="govuk-table__cell ">No</td>
-      <td class="govuk-table__cell ">No</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th class="govuk-c-table__cell-link" scope="row"><a href="2RC-1521-1095-0964-3143.html">RC-1521-1095-0964-3143<a/></th>
-      <td class="govuk-table__cell ">14 Feb 2018</td>
-      <td class="govuk-table__cell ">Credit account</td>
-      <td class="govuk-table__cell ">£215.50</td>
-      <td class="govuk-table__cell ">Sucess</td>
-      <td class="govuk-table__cell ">No</td>
-      <td class="govuk-table__cell ">No</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th class="govuk-c-table__cell-link" scope="row"><a href="1RC-7745-1623-4870-7132.html">RC-7745-1623-4870-7132<a/></th>
-      <td class="govuk-table__cell ">09 Mar 2018</td>
-      <td class="govuk-table__cell ">Card</td>
-      <td class="govuk-table__cell ">£100.00</td>
-      <td class="govuk-table__cell ">Sucess</td>
-      <td class="govuk-table__cell ">No</td>
-      <td class="govuk-table__cell ">No</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th class="govuk-c-table__cell-link" scope="row"><a href="2RC-7745-1623-4870-7132.html">RC-7745-1623-4870-7132<a/></th>
-      <td class="govuk-table__cell ">09 Mar 2018</td>
-      <td class="govuk-table__cell ">Card</td>
-      <td class="govuk-table__cell ">£101.00</td>
-      <td class="govuk-table__cell ">Sucess</td>
-      <td class="govuk-table__cell ">No</td>
-      <td class="govuk-table__cell ">No</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <th class="govuk-c-table__cell-link" scope="row"><a href="1RC-3556-2525-7732-1145.html">RC-3556-2525-7732-1145<a/></th>
-      <td class="govuk-table__cell ">14 Feb 2018</td>
-      <td class="govuk-table__cell ">Credit account</td>
-      <td class="govuk-table__cell ">£550.00</td>
       <td class="govuk-table__cell ">Failed</td>
       <td class="govuk-table__cell ">No</td>
       <td class="govuk-table__cell ">No</td>
     </tr>
+
+    <tr class="govuk-table__row">
+      <th class="govuk-c-table__cell-link" scope="row"><a href="/RC-1521-1095-0964-3143">RC-1521-1095-0964-3143<a/></th>
+      <td class="govuk-table__cell ">28 Jun 2018—12:31:27</td>
+      <td class="govuk-table__cell ">Credit account</td>
+      <td class="govuk-table__cell ">£215.00</td>
+      <td class="govuk-table__cell ">Success</td>
+      <td class="govuk-table__cell ">No</td>
+      <td class="govuk-table__cell ">No</td>
+    </tr>
+
 
   </tbody>
 </table>
@@ -140,11 +116,12 @@
       {{govukTabs({
         tabs: [
         {
-          id: 'paymentDetails',
-          label: 'Payment details',
+          id: 'payment',
+          label: 'Payment',
           panel: {
-            html: paymentDetailsPanelHtml
+            html: paymentPanelHtml
           }
+
         }]
       })}}
 

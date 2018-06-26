@@ -1,0 +1,96 @@
+{% extends "layouts/admin/base.html" %}
+
+
+{% block body_start %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-tabs-enabled' : 'js-tabs-enabled');</script>
+{% endblock %}
+
+{% block page_title %}Case 2309-1129-5569-2669{% endblock %}
+
+{% block content %}
+
+<div class="jui-width-container">
+
+  <main role="main" class="govuk-main-wrapper">
+
+    <h3 class="govuk-heading-l">Case list</h3>
+
+    {{ govukButton({
+      "text": "Create new case",
+      "href": ""
+    }) }}
+
+
+                  <table class="govuk-table">
+              <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+              <th class="govuk-table__header" scope="col">Case number</th>
+              <th class="govuk-table__header" scope="col">Petitioner</th>
+              <th class="govuk-table__header" scope="col">Respondent</th>
+              <th class="govuk-table__header" scope="col">Date of last court action</th>
+              <th class="govuk-table__header" scope="col">Application status</th>
+
+              </tr>
+              </thead>
+
+              <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+              <th class="govuk-c-table__cell-link" scope="row"><a href="case-view">2309-1129-5569-2669<a/></th>
+              <td class="govuk-table__cell ">Jane Hartley</td>
+              <td class="govuk-table__cell ">Matt Hartley</td>
+              <td class="govuk-table__cell ">14 Jun 2018</td>
+              <td class="govuk-table__cell ">Petition issued</td>
+
+              </tr>
+
+              <tr class="govuk-table__row">
+              <th class="govuk-c-table__cell-link" scope="row"><a href="">0032-5362-1372-9831<a/></th>
+              <td class="govuk-table__cell ">Mike Miah</td>
+              <td class="govuk-table__cell ">Andrews Collins</td>
+              <td class="govuk-table__cell ">17 Jun 2018</td>
+              <td class="govuk-table__cell ">Petition recived</td>
+
+              </tr>
+
+              <tr class="govuk-table__row">
+              <th class="govuk-c-table__cell-link" scope="row"><a href="">6535-6721-3867-2567<a/></th>
+              <td class="govuk-table__cell ">Phillip Brown</td>
+              <td class="govuk-table__cell ">Alice Button</td>
+              <td class="govuk-table__cell ">23 Jun 2018</td>
+              <td class="govuk-table__cell ">Petition issued</td>
+
+              </tr>
+
+              <tr class="govuk-table__row">
+              <th class="govuk-c-table__cell-link" scope="row"><a href="">2422-6462-1245-1534<a/></th>
+              <td class="govuk-table__cell ">James Adams</td>
+              <td class="govuk-table__cell ">Harold Chapman</td>
+              <td class="govuk-table__cell ">25 Jun 2018</td>
+              <td class="govuk-table__cell ">Petition recived</td>
+
+              </tr>
+
+              <tr class="govuk-table__row">
+              <th class="govuk-c-table__cell-link" scope="row"><a href="">8483-2356-1251-3722<a/></th>
+              <td class="govuk-table__cell ">Dan Goodman</td>
+              <td class="govuk-table__cell ">Sarah Green</td>
+              <td class="govuk-table__cell ">26 Jun 2018</td>
+              <td class="govuk-table__cell ">Petition issued</td>
+
+              </tr>
+
+
+              </tbody>
+              </table>
+
+
+    </main>
+
+  </div>
+
+
+
+
+
+
+{% endblock %}

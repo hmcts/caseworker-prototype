@@ -5,7 +5,7 @@
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-tabs-enabled' : 'js-tabs-enabled');</script>
 {% endblock %}
 
-{% block page_title %}RC-1521-1095-0964-3143{% endblock %}
+{% block page_title %}RC-7745-1623-4870-7132{% endblock %}
 
 {% block content %}
 
@@ -13,12 +13,17 @@
 
   <main role="main" class="govuk-main-wrapper">
 
-      <p class="govuk-body govuk-!-font-weight-bold"> Case list</p>
+    <a class="govuk-body govuk-!-f-19" href="/case-list">
+      Case list
+    </a>
+
+    <br>
+    <br>
 
 
 
     <div id="subHeader">
-       <p id="paragraphWhite">2309-1129-5569-2669</p>
+       <p class="textWhite">2309-1129-5569-2669<strong class="bold-small">Jane Hartley vs Matt Hartley</strong></p>
        <!-- <p id="paragraphWhite">Print</p> -->
     </div>
 
@@ -27,13 +32,13 @@
 
 
 
-  <a href="case-view" class="govuk-back-link">Back</a>
+  <a href="/case-view-examples" class="govuk-back-link">Back</a>
 
 
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Payment details</h1>
+        <h1 class="govuk-heading-xl">Payment summary</h1>
 
 
         <table class="govuk-c-table">
@@ -53,13 +58,13 @@
                 </tr> -->
                 <tr class="govuk-c-table__row">
                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Payment reference:</th>
-                  <td class="govuk-c-table__cell-CCD-column2-test">RC-1521-1095-0964-3143</td>
+                  <td class="govuk-c-table__cell-CCD-column2-test">RC-7745-1623-4870-7132</td>
                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
                 </tr>
 
                 <tr class="govuk-c-table__row">
                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Total payment amount:</th>
-                  <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                  <td class="govuk-c-table__cell-CCD-column2-test">£100.00</td>
                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
                 </tr>
               </tbody>
@@ -82,12 +87,12 @@
                <tbody class="govuk-c-table__body">
                  <tr class="govuk-c-table__row">
                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Fee description:</th>
-                   <td class="govuk-c-table__cell-CCD-column2-test">Application for probate</td>
+                   <td class="govuk-c-table__cell-CCD-column2-test">Application for hearing</td>
                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
                  </tr>
                  <tr class="govuk-c-table__row">
                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Fee code:</th>
-                   <td class="govuk-c-table__cell-CCD-column2-test">FEE0334</td>
+                   <td class="govuk-c-table__cell-CCD-column2-test">FEE1224</td>
                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
                  </tr>
                  <!-- <tr class="govuk-c-table__row">
@@ -97,7 +102,7 @@
                  </tr> -->
                  <tr class="govuk-c-table__row">
                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Fee amount:</th>
-                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£100.00</td>
                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
                  </tr>
                  <!-- <tr class="govuk-c-table__row">
@@ -107,7 +112,7 @@
                  </tr> -->
                  <tr class="govuk-c-table__row">
                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Net amount:</th>
-                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£100.00</td>
                    <td class="govuk-c-table__cell-CCD-column3-test"></td>
                  </tr>
 
@@ -118,7 +123,7 @@
           <br>
 
 
-          <h2 class="govuk-heading-l">RC-1521-1095-0964-3143</h2>
+          <h2 class="govuk-heading-l">RC-7745-1623-4870-7132</h2>
 
         <table class="govuk-c-table">
           <h2>Payment method</h2>
@@ -135,22 +140,22 @@
               <tbody class="govuk-c-table__body">
                 <tr class="govuk-c-table__row">
                   <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Type:</th>
-                  <td class="govuk-c-table__cell-CCD-column2-test">Credit</td>
+                  <td class="govuk-c-table__cell-CCD-column2-test">Card</td>
                   <td class="govuk-c-table__cell-CCD-column3-test"></td>
                   <tr class="govuk-c-table__row">
 
-                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">PBA account name:</th>
-                    <td class="govuk-c-table__cell-CCD-column2-test">DLA Piper</td>
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Name:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">John Brown</td>
                     <td class="govuk-c-table__cell-CCD-column3-test"></td>
                   </tr>
                   <tr class="govuk-c-table__row">
-                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">PBA number:</th>
-                    <td class="govuk-c-table__cell-CCD-column2-test">PBA0087711</td>
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Card number:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">**** **** **** 2346</td>
                     <td class="govuk-c-table__cell-CCD-column3-test"></td>
                   </tr>
                   <tr class="govuk-c-table__row">
-                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Customer internal reference:</th>
-                    <td class="govuk-c-table__cell-CCD-column2-test">NSH/AG02/01044212/1</td>
+                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Card expiry date:</th>
+                    <td class="govuk-c-table__cell-CCD-column2-test">12/20</td>
                     <td class="govuk-c-table__cell-CCD-column3-test"></td>
                   </tr>
 
@@ -210,13 +215,13 @@
                <tbody class="govuk-c-table__body">
                  <tr class="govuk-c-table__row">
                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Payment pending</th>
-                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
-                   <td class="govuk-c-table__cell-CCD-column3-test">14 Feb 2018—10:25:12</td>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£100.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test">09 Mar 2018—14:48:33</td>
                  </tr>
                  <tr class="govuk-c-table__row">
                    <th class="govuk-c-table__cell-CCD-column1-test" scope="row">Payment successful</th>
-                   <td class="govuk-c-table__cell-CCD-column2-test">£215.00</td>
-                   <td class="govuk-c-table__cell-CCD-column3-test">28 Feb 2018—12:31:27</td>
+                   <td class="govuk-c-table__cell-CCD-column2-test">£100.00</td>
+                   <td class="govuk-c-table__cell-CCD-column3-test">09 Mar 2018—14:48:39</td>
                  </tr>
 
 
@@ -251,7 +256,7 @@
                                 Full refund
                               </label>
                               <span id="email-hint" class="govuk-hint">
-                                refund amount of £215.00
+                                refund amount of £101.00
                               </span>
                               </div>
 
