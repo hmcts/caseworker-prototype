@@ -153,12 +153,14 @@ table th {
     padding: 0;
     position: absolute;
     width: 1px;
+
   }
 
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
     margin-bottom: .625em;
+
   }
 
   table td {
@@ -166,6 +168,7 @@ table th {
     display: block;
     font-size: .8em;
     text-align: right;
+    padding 0 5 0 0;
   }
 
   table td::before {
@@ -180,5 +183,6 @@ table th {
 
   table td:last-child {
     border-bottom: 0;
+
   }
 }

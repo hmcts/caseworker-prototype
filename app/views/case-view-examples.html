@@ -72,65 +72,63 @@
 
       <h1 class="govuk-heading-xl">Examples</h1>
 
-      <h3 class="govuk-heading-m">
-        Credit account payment <span class="govuk-caption-m">(happy path + multi fee + failed payment)</span>
-      </h3>
-
-        <table class="govuk-table">
-          <thead class="govuk-table__head">
-            <tr class="govuk-table__row">
-              <th class="govuk-table__header" scope="col">Payment reference</th>
-              <th class="govuk-table__header" scope="col">Date created</th>
-              <th class="govuk-table__header" scope="col">Method</th>
-              <th class="govuk-table__header" scope="col">Amount</th>
-              <th class="govuk-table__header" scope="col">Status</th>
-              <th class="govuk-table__header" scope="col">Remission</th>
-              <th class="govuk-table__header" scope="col">Refund</th>
-            </tr>
-          </thead>
-
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <th class="govuk-c-table__cell-link" scope="row"><a href="/payment-pages/credit.html">RC-1521-1095-0964-3143<a/></th>
-            <td class="govuk-table__cell ">14 Feb 2018—10:25:12</td>
-            <td class="govuk-table__cell ">Credit account</td>
-            <td class="govuk-table__cell ">£215.00</td>
-            <td class="govuk-table__cell ">Success</td>
-            <td class="govuk-table__cell ">No</td>
-            <td class="govuk-table__cell ">No</td>
-          </tr>
-
-          <tr class="govuk-table__row">
-            <th class="govuk-c-table__cell-link" scope="row"><a href="/payment-pages/credit+multifee.html">RC-1521-1095-0964-3143<a/></th>
-            <td class="govuk-table__cell ">14 Feb 2018—10:25:12</td>
-            <td class="govuk-table__cell ">Credit account</td>
-            <td class="govuk-table__cell ">£215.50</td>
-            <td class="govuk-table__cell ">Success</td>
-            <td class="govuk-table__cell ">No</td>
-            <td class="govuk-table__cell ">No</td>
-          </tr>
-
-          <tr class="govuk-table__row">
-            <th class="govuk-c-table__cell-link" scope="row"><a href="/payment-pages/credit+failed">RC-3556-2525-7732-1145<a/></th>
-            <td class="govuk-table__cell ">14 Feb 2018—10:25:12</td>
-            <td class="govuk-table__cell ">Credit account</td>
-            <td class="govuk-table__cell ">£550.00</td>
-            <td class="govuk-table__cell ">Failed</td>
-            <td class="govuk-table__cell ">No</td>
-            <td class="govuk-table__cell ">No</td>
-          </tr>
-
-        </tbody>
-
-      </table>
+    
 
       <br>
 
-      <h3 class="govuk-heading-m">
-        Card payment <span class="govuk-caption-m">(happy path + multi fee)</span>
-      </h3>
+              <table class="govuk-table">
+              <caption class="govuk-table__caption">Credit account payment <span class="govuk-caption-m">(happy path + multi fee + failed payment)</span></caption>
+              <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                  <th class="govuk-table__header" scope="col">Payment reference</th>
+                  <th class="govuk-table__header" scope="col">Date created</th>
+                  <th class="govuk-table__header" scope="col">Method</th>
+                  <th class="govuk-table__header" scope="col">Amount</th>
+                  <th class="govuk-table__header" scope="col">Status</th>
+                  <th class="govuk-table__header" scope="col">Remission</th>
+                  <th class="govuk-table__header" scope="col">Refund</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="Payment reference"><a href="/payment-pages/credit">RC-1521-1095-0964-3143<a/></td>
+                  <td data-label="Date created">14 Feb 2018—10:25:12</td>
+                  <td data-label="Method">Credit account</td>
+                  <td data-label="Amount">£215.00</td>
+                  <td data-label="Status">Success</td>
+                  <td data-label="Remission">No</td>
+                  <td data-label="Refund">No</td>
+                </tr>
+                <tr>
+                  <td data-label="Payment reference"><a href="/payment-pages/credit+multifee">RC-1521-1095-0964-3143<a/></td>
+                  <td data-label="Date created">14 Feb 2018—10:25:12</td>
+                  <td data-label="Method">Credit account</td>
+                  <td data-label="Amount">£215.50</td>
+                  <td data-label="Status">Success</td>
+                  <td data-label="Remission">No</td>
+                  <td data-label="Refund">No</td>
+                </tr>
+                <tr>
+                  <td data-label="Payment reference"><a href="/payment-pages/credit+failed">RC-3556-2525-7732-1145<a/></td>
+                  <td data-label="Date created">14 Feb 2018—10:25:12</td>
+                  <td data-label="Method">Credit account</td>
+                  <td data-label="Amount">£550.00</td>
+                  <td data-label="Status">Failed</td>
+                  <td data-label="Remission">No</td>
+                  <td data-label="Refund">No</td>
+                </tr>
 
-        <table class="govuk-table">
+
+
+
+              </tbody>
+              </table>
+
+
+      <br>
+
+                <table class="govuk-table">
+          <caption class="govuk-table__caption">Card payment <span class="govuk-caption-m">(happy path + multi fee)</span></caption>
           <thead class="govuk-table__head">
             <tr class="govuk-table__row">
               <th class="govuk-table__header" scope="col">Payment reference</th>
@@ -142,31 +140,30 @@
               <th class="govuk-table__header" scope="col">Refund</th>
             </tr>
           </thead>
+          <tbody>
+            <tr>
+              <td data-label="Payment reference"><a href="/payment-pages/card">RC-7745-1623-4870-7132<a/></td>
+              <td data-label="Date created">09 Mar 2018—14:48:39</td>
+              <td data-label="Method">Card</td>
+              <td data-label="Amount">£100.00</td>
+              <td data-label="Status">Success</td>
+              <td data-label="Remission">No</td>
+              <td data-label="Refund">No</td>
+            </tr>
 
-        <tbody class="govuk-table__body">
-          <tr class="govuk-table__row">
-            <th class="govuk-c-table__cell-link" scope="row"><a href="/payment-pages/card">RC-7745-1623-4870-7132<a/></th>
-            <td class="govuk-table__cell ">09 Mar 2018—14:48:39</td>
-            <td class="govuk-table__cell ">Card</td>
-            <td class="govuk-table__cell ">£100.00</td>
-            <td class="govuk-table__cell ">Success</td>
-            <td class="govuk-table__cell ">No</td>
-            <td class="govuk-table__cell ">No</td>
-          </tr>
+            <tr>
+              <td data-label="Payment reference"><a href="/payment-pages/card+multifee">RC-7745-1623-4870-7132<a/></td>
+              <td data-label="Date created">09 Mar 2018—14:48:39</td>
+              <td data-label="Method">Card</td>
+              <td data-label="Amount">£101.00</td>
+              <td data-label="Status">Success</td>
+              <td data-label="Remission">No</td>
+              <td data-label="Refund">No</td>
+            </tr>
 
-            <tr class="govuk-table__row">
-            <th class="govuk-c-table__cell-link" scope="row"><a href="/payment-pages/card+multifee">RC-7745-1623-4870-7132<a/></th>
-            <td class="govuk-table__cell ">09 Mar 2018—14:48:39</td>
-            <td class="govuk-table__cell ">Card</td>
-            <td class="govuk-table__cell ">£101.00</td>
-            <td class="govuk-table__cell ">Success</td>
-            <td class="govuk-table__cell ">No</td>
-            <td class="govuk-table__cell ">No</td>
-          </tr>
 
-        </tbody>
-
-      </table>
+          </tbody>
+          </table>
 
 
 
