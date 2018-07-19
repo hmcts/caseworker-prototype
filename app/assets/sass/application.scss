@@ -187,13 +187,16 @@ table th {
   border-bottom: 0;
 }
 
-.linked-payment-top {
+.linked-payment {
   border-left: 5px solid #005ea5;
   padding-left: 7px;
 }
 
-.linked-payment-bottom {
-  border-left: 5px solid #005ea5;
-  padding-left: 7px;
+.linked-payment-ref {
+  padding-left: 0px;
 
+  @media screen and (min-width: 650px) {
+    padding-left: 7px;
+
+  }
 }
