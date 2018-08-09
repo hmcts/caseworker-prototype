@@ -5,7 +5,7 @@
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-tabs-enabled' : 'js-tabs-enabled');</script>
 {% endblock %}
 
-{% block page_title %}RC-7745-1623-4870-7132{% endblock %}
+{% block page_title %}Case 2309-1129-5569-2669{% endblock %}
 
 {% block content %}
 
@@ -13,388 +13,544 @@
 
   <main role="main" class="govuk-main-wrapper">
 
-    <a class="govuk-body govuk-!-f-19" href="/case-list">
-      Case list
-    </a>
 
-    <br>
+    <h1 class="govuk-heading-xl">#2309-1129-5569-2669</h1>
     <br>
 
 
-
-    <div id="subHeader">
-      <p class="textWhite">2309-1129-5569-2669<strong class="bold-small"></strong></p>
-       <!-- <p id="paragraphWhite">Print</p> -->
-    </div>
-
-    <br>
+     <!-- Tabbed panel -->
+    <div class="govuk-!-mb-r9">
 
 
+      {% set paymentPanelHtml %}
+        <div class="govuk-prose-scope  govuk-!-pt-r6">
+
+          <div class="jui-width-container">
+
+            <main role="main" class="govuk-main-wrapper">
 
 
-  <a href="/case-view-examples" class="govuk-back-link">Back</a>
-
-
-
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Payment summary</h1>
+            <a href="/case-view-examples" class="govuk-back-link">Back</a>
 
 
 
-
-             <dl class="govuk-check-your-answers govuk-check-your-answers--short">
-               <div class="govuk-check-your-answers__contents">
-                 <dt class="govuk-check-your-answers__question">
-                   Payment reference
-                 </dt>
-                 <dd class="govuk-check-your-answers__answer">
-                   RC-7745-1623-4870-7132
-                 </dd>
-                 <dd class="govuk-check-your-answers__change">
-
-                 </dd>
-               </div>
-               <div class="govuk-check-your-answers__contents">
-                 <dt class="govuk-check-your-answers__question">
-                   Total payment amount
-                 </dt>
-                 <dd class="govuk-check-your-answers__answer">
-                   £101.00
-                 </dd>
-                 <dd class="govuk-check-your-answers__change">
-                   <div class ="white-text">...............................</div>
-
-                 </dd>
-               </div>
-             </dl>
+              <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                  <h1 class="govuk-heading-xl">Payment summary</h1>
 
 
 
-         <br>
 
-         <h3 class="govuk-heading-m">Fee details</h3>
+                       <dl class="govuk-check-your-answers govuk-check-your-answers--short">
+                         <div class="govuk-check-your-answers__contents">
+                           <dt class="govuk-check-your-answers__question">
+                             Payment reference
+                           </dt>
+                           <dd class="govuk-check-your-answers__answer">
+                             RC-7745-1623-4870-7132
+                           </dd>
+                           <dd class="govuk-check-your-answers__change">
+
+                           </dd>
+                         </div>
+                         <div class="govuk-check-your-answers__contents">
+                           <dt class="govuk-check-your-answers__question">
+                             Total payment amount
+                           </dt>
+                           <dd class="govuk-check-your-answers__answer">
+                             £101.00
+                           </dd>
+                           <dd class="govuk-check-your-answers__change">
+                             <div class ="white-text">...............................</div>
+
+                           </dd>
+                         </div>
+                       </dl>
 
 
-        <dl class="govuk-check-your-answers govuk-check-your-answers--short">
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              Description
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              Application for hearing
-            </dd>
-            <dd class="govuk-check-your-answers__change">
 
-            </dd>
+                   <br>
+
+                   <h3 class="govuk-heading-m">Fee details</h3>
+
+
+                  <dl class="govuk-check-your-answers govuk-check-your-answers--short">
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        Description
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        Application for hearing
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        <caption></caption>
+                        Code
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        FEE1224
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        Fee amount
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        £101.00
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        Net amount
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        £101.00
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+                        <div class ="white-text">...............................</div>
+
+                      </dd>
+                    </div>
+                  </dl>
+
+                  <br>
+
+                  <dl class="govuk-check-your-answers govuk-check-your-answers--short">
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        Description
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        Copy of document
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        <caption></caption>
+                        Code
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        FEE2309
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        <caption></caption>
+                        Quantity
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        2
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        Fee amount
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        £0.50
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+
+                      </dd>
+                    </div>
+                    <div class="govuk-check-your-answers__contents">
+                      <dt class="govuk-check-your-answers__question">
+                        Net amount
+                      </dt>
+                      <dd class="govuk-check-your-answers__answer">
+                        £1.00
+                      </dd>
+                      <dd class="govuk-check-your-answers__change">
+                        <div class ="white-text">...............................</div>
+
+                      </dd>
+                    </div>
+                  </dl>
+
+
+
+
+                    <br>
+                    <br>
+
+
+
+
+                    <h3 class="govuk-heading-m">Payment method</h3>
+
+                   <dl class="govuk-check-your-answers govuk-check-your-answers--short">
+                     <div class="govuk-check-your-answers__contents">
+                       <dt class="govuk-check-your-answers__question">
+                         Method
+                       </dt>
+                       <dd class="govuk-check-your-answers__answer">
+                         Card
+                       </dd>
+                       <dd class="govuk-check-your-answers__change">
+
+                       </dd>
+                     </div>
+                     <div class="govuk-check-your-answers__contents">
+                       <dt class="govuk-check-your-answers__question">
+                         Visa
+                       </dt>
+                       <dd class="govuk-check-your-answers__answer">
+                         Card
+                       </dd>
+                       <dd class="govuk-check-your-answers__change">
+
+                       </dd>
+                     </div>
+                     <div class="govuk-check-your-answers__contents">
+                       <dt class="govuk-check-your-answers__question">
+                         Name
+                       </dt>
+                       <dd class="govuk-check-your-answers__answer">
+                         John Brown
+                       </dd>
+                       <dd class="govuk-check-your-answers__change">
+
+                       </dd>
+                     </div>
+                     <div class="govuk-check-your-answers__contents">
+                       <dt class="govuk-check-your-answers__question">
+                         Card number
+                       </dt>
+                       <dd class="govuk-check-your-answers__answer">
+                         **** **** **** 2346
+                       </dd>
+                       <dd class="govuk-check-your-answers__change">
+
+                       </dd>
+                     </div>
+                     <div class="govuk-check-your-answers__contents">
+                       <dt class="govuk-check-your-answers__question">
+                         Card expiry date
+                       </dt>
+                       <dd class="govuk-check-your-answers__answer">
+                         12/20
+                       </dd>
+                       <dd class="govuk-check-your-answers__change">
+                         <div class ="white-text">...............................</div>
+
+                       </dd>
+                     </div>
+                   </dl>
+
+
+
+                   <br>
+
+                   <h3 class="govuk-heading-m">Payment history</h3>
+
+                    <dl class="govuk-check-your-answers govuk-check-your-answers--short">
+                      <div class="govuk-check-your-answers__contents">
+                        <dt class="govuk-check-your-answers__question">
+                          Payment pending
+                        </dt>
+                        <dd class="govuk-check-your-answers__answer">
+                          £101.00
+                        </dd>
+                        <dd class="govuk-check-your-answers__change">
+                          09 Mar 2018—14:48:33
+                        </dd>
+                      </div>
+
+                      <div class="govuk-check-your-answers__contents">
+                        <dt class="govuk-check-your-answers__question">
+                          Payment success
+                        </dt>
+                        <dd class="govuk-check-your-answers__answer">
+                          £101.00
+                        </dd>
+                        <dd class="govuk-check-your-answers__change">
+                          09 Mar 2018—14:48:39
+                        </dd>
+                      </div>
+                    </dl>
+
+
+                </div>
+
+                <br>
+
+                <div class="govuk-grid-column-one-third">
+
+                  <div id="myDIV" style="display: none;">
+                    <div class="govuk-panel govuk-panel--confirmation">
+                      <div class="govuk-panel__body">
+                        <strong>Refund requested</strong>
+                      </div>
+                      <div class="govuk-panel__body">
+                        by James Brown
+                      </div>
+                      <span class="govuk-!-font-size-24" >DD MMM YYYY—00:00:00</span>
+                    </div>
+
+                    <br>
+
+                    <h3 class="govuk-heading-m">What happens next</h3>
+
+                    <p class="govuk-body">
+                      Your request has been sent for approval.
+                      <br>
+                      You will be notified when completed.
+                    </p>
+
+                  </div>
+
+                  <div id="refundRequestFields" style="display: block;">
+
+                  <div class="govuk-form-group">
+              <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                <h2 class="govuk-heading-l">Request refund</h2>
+
+              </legend>
+
+
+              <span id="changed-name-hint" class="govuk-hint">
+              </span>
+
+
+
+              <div class="govuk-radios" data-module="radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+                  Full refund
+                </label>
+
+                </div>
+
+                <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-1">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="select-1">
+                        Reason for refund
+                      </label>
+                      <select class="govuk-select" id="select-1" name="select-1">
+                        <option value="0"selected>Select</option>
+                        <option value="1">Petition cannot be issued</option>
+                        <option value="2">Not provided a valid address for the respondent</option>
+                        <option value="3">Civil partnership dissolution</option>
+                        <option value="4">Test payment</option>
+                      </select>
+
+                      <br>
+                      <br>
+                      <br>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="more-detail">
+                          Comment (optional)
+                        </label>
+                        <span id="more-detail-hint" class="govuk-hint">
+                          Don’t include personal or financial information, eg credit card details.
+                        </span>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    Part refund
+                  </label>
+
+                  </div>
+
+                  <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-2">
+                    <div class="govuk-currency-input">
+                      <label class="govuk-label" for="contact-by-email">
+                      Amount
+                    </label>
+                      <div class="govuk-currency-input__inner">
+                        <span class="govuk-currency-input__inner__unit govuk-body">£</span>
+                        <input class="govuk-currency-input__inner__input govuk-input" aria-label="Enter amount in pounds" name="part-refund-cost" data-non-numeric type="number" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+                      </div>
+                    </div>
+                      <br>
+
+                      <label class="govuk-label" for="select-1">
+                        Reason for refund
+                      </label>
+
+                      <select class="govuk-select" id="select-1" name="select-1">
+                        <option value="0"selected>Select</option>
+                        <option value="1">Petition cannot be issued</option>
+                        <option value="2">Not provided a valid address for the respondent</option>
+                        <option value="3">Civil partnership dissolution</option>
+                        <option value="4">Test payment</option>
+                      </select>
+
+                      <br>
+                      <br>
+                      <br>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="email">
+                          Help with fees reference (optional)
+                        </label>
+                        <span id="email-hint" class="govuk-hint">
+                          Example: PA18-034566 or <br> HWF-NYM-PNF
+                        </span>
+                        <input class="govuk-input" id="email" name="email" type="text" aria-describedby="email-hint">
+                      </div>
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="more-detail">
+                          Comment (optional)
+                        </label>
+                        <span id="more-detail-hint" class="govuk-hint">
+                          Don’t include personal or financial information, eg credit card details.
+                        </span>
+                        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="2" aria-describedby="more-detail-hint"></textarea>
+                      </div>
+
+                    </div>
+
+
+
+                  </div>
+
+                  <br>
+
+
+                  <button onclick="myFunction()" class="govuk-button">
+                    Request refund
+                  </button>
+
+                  <br>
+
+                  <a href="/payment-pages/card+multifee" class="govuk-link govuk-!-font-size-19">Cancel</a>
+
+
+                  </div>
+
+              </fieldset>
+            </div>
+
+
           </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              <caption></caption>
-              Code
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              FEE1224
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-
-            </dd>
-          </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              Fee amount
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              £101.00
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-
-            </dd>
-          </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              Net amount
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              £101.00
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-              <div class ="white-text">...............................</div>
-
-            </dd>
-          </div>
-        </dl>
-
-        <br>
-
-        <dl class="govuk-check-your-answers govuk-check-your-answers--short">
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              Description
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              Copy of document
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-
-            </dd>
-          </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              <caption></caption>
-              Code
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              FEE2309
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-
-            </dd>
-          </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              <caption></caption>
-              Quantity
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              2
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-
-            </dd>
-          </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              Fee amount
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              £0.50
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-
-            </dd>
-          </div>
-          <div class="govuk-check-your-answers__contents">
-            <dt class="govuk-check-your-answers__question">
-              Net amount
-            </dt>
-            <dd class="govuk-check-your-answers__answer">
-              £1.00
-            </dd>
-            <dd class="govuk-check-your-answers__change">
-              <div class ="white-text">...............................</div>
-
-            </dd>
-          </div>
-        </dl>
-
-
 
 
           <br>
-          <br>
 
 
+            </main>
 
-
-          <h3 class="govuk-heading-m">Payment method</h3>
-
-         <dl class="govuk-check-your-answers govuk-check-your-answers--short">
-           <div class="govuk-check-your-answers__contents">
-             <dt class="govuk-check-your-answers__question">
-               Method
-             </dt>
-             <dd class="govuk-check-your-answers__answer">
-               Card
-             </dd>
-             <dd class="govuk-check-your-answers__change">
-
-             </dd>
-           </div>
-           <div class="govuk-check-your-answers__contents">
-             <dt class="govuk-check-your-answers__question">
-               Visa
-             </dt>
-             <dd class="govuk-check-your-answers__answer">
-               Card
-             </dd>
-             <dd class="govuk-check-your-answers__change">
-
-             </dd>
-           </div>
-           <div class="govuk-check-your-answers__contents">
-             <dt class="govuk-check-your-answers__question">
-               Name
-             </dt>
-             <dd class="govuk-check-your-answers__answer">
-               John Brown
-             </dd>
-             <dd class="govuk-check-your-answers__change">
-
-             </dd>
-           </div>
-           <div class="govuk-check-your-answers__contents">
-             <dt class="govuk-check-your-answers__question">
-               Card number
-             </dt>
-             <dd class="govuk-check-your-answers__answer">
-               **** **** **** 2346
-             </dd>
-             <dd class="govuk-check-your-answers__change">
-
-             </dd>
-           </div>
-           <div class="govuk-check-your-answers__contents">
-             <dt class="govuk-check-your-answers__question">
-               Card expiry date
-             </dt>
-             <dd class="govuk-check-your-answers__answer">
-               12/20
-             </dd>
-             <dd class="govuk-check-your-answers__change">
-               <div class ="white-text">...............................</div>
-
-             </dd>
-           </div>
-         </dl>
-
-
-
-         <br>
-
-         <h3 class="govuk-heading-m">Payment history</h3>
-
-          <dl class="govuk-check-your-answers govuk-check-your-answers--short">
-            <div class="govuk-check-your-answers__contents">
-              <dt class="govuk-check-your-answers__question">
-                Payment pending
-              </dt>
-              <dd class="govuk-check-your-answers__answer">
-                £101.00
-              </dd>
-              <dd class="govuk-check-your-answers__change">
-                09 Mar 2018—14:48:33
-              </dd>
-            </div>
-
-            <div class="govuk-check-your-answers__contents">
-              <dt class="govuk-check-your-answers__question">
-                Payment success
-              </dt>
-              <dd class="govuk-check-your-answers__answer">
-                £101.00
-              </dd>
-              <dd class="govuk-check-your-answers__change">
-                09 Mar 2018—14:48:39
-              </dd>
-            </div>
-          </dl>
-
-
-      </div>
-
-      <br>
-
-
-
-
-
-      <div class="govuk-grid-column-one-third">
-
-                                <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h2 class="govuk-heading-l">Refund</h2>
-                            </legend>
-                            <span id="changed-name-hint" class="govuk-hint">
-
-                            </span>
-                            <div class="govuk-radios" data-module="radios">
-                              <div class="govuk-radios__item">
-                                <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
-                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
-                                Full refund
-                              </label>
-                              <span id="email-hint" class="govuk-hint">
-                                refund amount of £101.00
-                              </span>
-                              </div>
-
-                              <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-1">
-                                  <div class="govuk-form-group">
-                                    <label class="govuk-label" for="select-1">
-                                      Reason for refund
-                                    </label>
-                                    <select class="govuk-select" id="select-1" name="select-1">
-                                      <option value="0"selected>Select</option>
-                                      <option value="1">Petition cannot be issued</option>
-                                      <option value="2">Not provided a valid address for the respondent</option>
-                                      <option value="3">Civil partnership dissolution</option>
-                                      <option value="4">Test payment</option>
-                                    </select>
-                                  </div>
-                                </div>
-
-                                <div class="govuk-radios__item">
-                                  <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                                  <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
-                                  Part refund
-                                </label>
-                                <span id="email-hint" class="govuk-hint">
-                                  refund a partial amount
-                                </span>
-                                </div>
-
-                                <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-2">
-                                  <div class="govuk-form-group">
-
-
-                                      <label class="govuk-label" for="email">
-                                        Refund amount
-                                      </label>
-                                      <span id="email-hint" class="govuk-hint">
-
-                                      </span>
-                                      <input class="govuk-input" id="email" name="email" type="text" aria-describedby="email-hint">
-                                    </div>
-
-                                    <br>
-
-                                    <label class="govuk-label" for="select-1">
-                                      Reason for refund
-                                    </label>
-
-                                    <select class="govuk-select" id="select-1" name="select-1">
-                                      <option value="0"selected>Select</option>
-                                      <option value="1">Petition cannot be issued</option>
-                                      <option value="2">Not provided a valid address for the respondent</option>
-                                      <option value="3">Civil partnership dissolution</option>
-                                      <option value="4">Test payment</option>
-                                    </select>
-                                  </div>
-
-                                </div>
-
-
-                              </div>
-                            </fieldset>
-
-                            {{ govukButton({
-                              "text": "Refund",
-                              "href": ""
-                            }) }}
-
-                          </div>
-
+          </div>
 
         </div>
 
+      {% endset %}
 
-<br>
+      {% set extra1PanelHtml %}
+        <div class="govuk-prose-scope  govuk-!-pt-r6">
+          <p class="govuk-body">Another tab</p>
+        <br>
+        <br>
+        <br>
+        </div>
+      {% endset %}
+
+      {% set extra2PanelHtml %}
+        <div class="govuk-prose-scope  govuk-!-pt-r6">
+        <p class="govuk-body">Another tab</p>
+        <br>
+        <br>
+        <br>
+        </div>
+      {% endset %}
+
+      {{govukTabs({
+        tabs: [{
+          id: 'payment',
+          label: 'Payment',
+          panel: {
+            html: paymentPanelHtml
+          }
+        }, {
+          id: 'extra1',
+          label: 'Tab #',
+          panel: {
+            html: extra1PanelHtml
+          }
+        }, {
+          id: 'extra2',
+          label: 'Tab #',
+          panel: {
+            html: extra2PanelHtml
+          }
+        }]
+      })}}
+
+    </div>
 
 
   </main>
 
 </div>
 
+{% endblock %}
+
+{% block page_scripts %}
+  <script>
+  <link src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"/>
+  </script>
+  <script>
+
+
+    if(Tabs) {
+      new Tabs($('.govuk-tabs').eq(0));
+    } else {
+      $('.govuk-tabs .js-hidden').removeClass('js-hidden');
+      $('.js-tabs-enabled').removeClass('js-tabs-enabled');
+    }
+
+    function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+
+    var x = document.getElementById("refundRequestFields");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+
+    refundDate();
+
+    function refundDate() {
+      var dateField = document.getElementById('refundDate');
+      dateField.innerHTML = moment().add(1, 'months').format ('01 MMM YYYY');
+    }
+
+  </script>
 {% endblock %}

@@ -8,6 +8,7 @@ $path: "/public/images/";
 // Patterns that aren"t in GOV.UK Frontend
 @import "patterns/check-your-answers";
 @import "patterns/related-items";
+@import "patterns/currency-input";
 
 // JUI styles
 @import "jui/all";
@@ -36,11 +37,14 @@ mark.comment {
 	background-color:#005EA5;
 	text-align:left;
 	padding-top:1px;
-padding-left:20px;}
+padding-left:0px;}
 // text-align-last:right;
 
-.textWhite{
+#textLink{
   color:#fff;}
+
+  #textWhite{
+    color:#fff;}
 
 
 .govuk-c-table__cell-link {
@@ -199,4 +203,38 @@ table th {
     padding-left: 7px;
 
   }
+}
+
+
+.refund-requested {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+.mystyle {
+    visibility: visible;
+    width: 100%;
+    padding: 25px;
+    background-color: coral;
+    color: white;
+    font-size: 25px;
 }

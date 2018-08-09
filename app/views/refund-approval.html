@@ -1,0 +1,89 @@
+{% extends "layouts/admin/base.html" %}
+
+
+{% block body_start %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-tabs-enabled' : 'js-tabs-enabled');</script>
+{% endblock %}
+
+{% block page_title %}Review refund requests{% endblock %}
+
+{% block content %}
+
+<div class="jui-width-container">
+
+  <main role="main" class="govuk-main-wrapper">
+
+    <h3 class="govuk-heading-l">Review refund requests</h3>
+
+    <button type="submit" class="govuk-button">
+      Approve
+    </button>
+
+    <button type="submit" class="govuk-button">
+      Reject
+    </button>
+
+
+              <table class="govuk-table">
+        <caption class="govuk-table__caption"></caption>
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th class="govuk-table__header" scope="col">All<div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+
+          </label> </div></th>
+            <th class="govuk-table__header" scope="col">Case number</th>
+            <th class="govuk-table__header" scope="col">Refund reference</th>
+            <th class="govuk-table__header" scope="col">Type</th>
+            <th class="govuk-table__header" scope="col">Amount</th>
+            <th class="govuk-table__header" scope="col">Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Select">
+                    <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+
+                  </label> </div>
+                </td>
+            <td data-label="Case number"><a href="#">2309-1129-5569-2669<a/></td>
+            <td data-label="Refund reference"><a href="#">RE924653<a/></td>
+            <td data-label="Type">Full</td>
+            <td data-label="Amount">£215.00</td>
+            <td data-label="Reason">Petition canceled by customer</td>
+          </tr>
+
+          <tr>
+            <td data-label="Select">
+                    <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+
+                  </label> </div>
+                </td>
+            <td data-label="Case number"><a href="#">6633-2672-1662-7226<a/></td>
+            <td data-label="Refund reference"><a href="#">RE086325<a/></td>
+            <td data-label="Type">Full</td>
+            <td data-label="Amount">£550.00</td>
+            <td data-label="Reason">Petition canceled by customer</td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+
+
+    </main>
+
+  </div>
+
+
+
+
+
+
+{% endblock %}
