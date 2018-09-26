@@ -271,3 +271,18 @@
 </div>
 
 {% endblock %}
+
+{% block page_scripts %}
+
+  <script>
+
+
+    dateJava();
+
+    function dateJava() {
+      var dateField = document.getElementById('dateTest');
+      dateField.innerHTML = moment().add(, 'months').format ('DD MMM YYYY');
+    }
+
+  </script>
+{% endblock %}

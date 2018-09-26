@@ -195,17 +195,20 @@
                        <h3 class="govuk-heading-m">Payment history</h3>
 
                         <dl class="govuk-check-your-answers govuk-check-your-answers--short">
-                          <div class="govuk-check-your-answers__contents">
+
+
+                          <div id="historyRefundRequest" style="display: none;" class="govuk-check-your-answers__contents" >
                             <dt class="govuk-check-your-answers__question">
-                              Payment pending
+                              Refund request
                             </dt>
                             <dd class="govuk-check-your-answers__answer">
                               £215.00
                             </dd>
                             <dd class="govuk-check-your-answers__change">
-                              28 Jun 2018—12:31:27
+                              11 Sep 2018—00:00:00
                             </dd>
                           </div>
+
 
                           <div class="govuk-check-your-answers__contents">
                             <dt class="govuk-check-your-answers__question">
@@ -218,6 +221,18 @@
                               28 Jun 2018—12:31:27
                             </dd>
                           </div>
+
+                          <div class="govuk-check-your-answers__contents">
+                            <dt class="govuk-check-your-answers__question">
+                              Payment pending
+                            </dt>
+                            <dd class="govuk-check-your-answers__answer">
+                              £215.00
+                            </dd>
+                            <dd class="govuk-check-your-answers__change">
+                              28 Jun 2018—12:31:25
+                            </dd>
+                          </div>
                         </dl>
 
                     </div>
@@ -228,27 +243,30 @@
                 <div class="govuk-grid-column-one-third">
 
                   <div id="myDIV" style="display: none;">
-                    <div class="govuk-panel govuk-panel--confirmation">
+                    <div class="govuk-panel govuk-panel--confirmation" >
                       <div class="govuk-panel__body">
                         <strong>Refund requested</strong>
                       </div>
-                      <div class="govuk-panel__body">
+                      <br>
+                      <!-- <div class="govuk-panel__body">
                         by James Brown
-                      </div>
-                      <span class="govuk-!-font-size-24" >DD MMM YYYY—00:00:00</span>
+                      </div> -->
+                      <span class="govuk-!-font-size-24" id="refundDate">DD MMM YYYY—00:00:00</span>
                     </div>
 
                     <br>
 
-                    <h3 class="govuk-heading-m">What happens next</h3>
+                    <!-- <h3 class="govuk-heading-m">What happens next</h3>
 
                     <p class="govuk-body">
                       Your request has been sent for approval.
                       <br>
                       You will be notified when completed.
-                    </p>
+                    </p> -->
 
                   </div>
+
+
 
                   <div id="refundRequestFields" style="display: block;">
 
@@ -276,7 +294,7 @@
 
                 <div class="govuk-radios__conditional" id="conditional-how-contacted-conditional-1">
                     <div class="govuk-form-group">
-                      <label class="govuk-label" for="select-1">
+                      <!-- <label class="govuk-label" for="select-1">
                         Reason for refund
                       </label>
                       <select class="govuk-select" id="select-1" name="select-1">
@@ -285,11 +303,19 @@
                         <option value="2">Not provided a valid address for the respondent</option>
                         <option value="3">Civil partnership dissolution</option>
                         <option value="4">Test payment</option>
-                      </select>
+                      </select> -->
 
-                      <br>
-                      <br>
-                      <br>
+
+
+                      <div class="govuk-form-group">
+                        <label class="govuk-label" for="email">
+                          Help with fees reference (optional)
+                        </label>
+                        <span id="email-hint" class="govuk-hint">
+                          Example: PA18-034566 or <br> HWF-NYM-PNF
+                        </span>
+                        <input class="govuk-input" id="email" name="email" type="text" aria-describedby="email-hint">
+                      </div>
 
                       <div class="govuk-form-group">
                         <label class="govuk-label" for="more-detail">
@@ -301,14 +327,47 @@
                         <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="3" aria-describedby="more-detail-hint"></textarea>
                       </div>
 
+                      <div class="govuk-form-group">
+                        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                            <h3 class="govuk-fieldset__heading">
+                              Have you completed all offline checks?
+                            </h3>
+                          </legend>
+                          <!-- <span id="waste-hint" class="govuk-hint">
+                            Select all that apply.
+                          </span> -->
+                          <div class="govuk-checkboxes">
+                            <div class="govuk-checkboxes__item">
+                              <input class="govuk-checkboxes__input" id="i-agree" name="waste" type="checkbox" value="carcasses">
+                              <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                                I agree and confirm
+                              </label>
+                            </div>
+
+                            <br>
+
+                            <button onclick="myFunction()" class="govuk-button i-agree-btn" style="display: none;">
+                              Request refund
+                            </button>
+
+                            <br>
+
+                            <a href="/RC-1521-1095-0964-3143" class="govuk-link govuk-!-font-size-19 cancel-link">Cancel</a>
+
+
+                          </div>
+                        </fieldset>
+                      </div>
+
                     </div>
                   </div>
 
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-                    <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                    <!-- <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
                     Part refund
-                  </label>
+                  </label> -->
 
                   </div>
 
@@ -369,13 +428,13 @@
                   <br>
 
 
-                  <button onclick="myFunction()" class="govuk-button">
+                  <!-- <button onclick="myFunction()" class="govuk-button">
                     Request refund
                   </button>
 
                   <br>
 
-                  <a href="/RC-1521-1095-0964-3143" class="govuk-link govuk-!-font-size-19">Cancel</a>
+                  <a href="/RC-1521-1095-0964-3143" class="govuk-link govuk-!-font-size-19">Cancel</a> -->
 
 
                   </div>
@@ -448,8 +507,10 @@
 {% endblock %}
 
 {% block page_scripts %}
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/locale/en-gb.js"></script>
   <script>
+
 
 
     if(Tabs) {
@@ -460,26 +521,55 @@
     }
 
     function myFunction() {
-    var x = document.getElementById("myDIV");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+
+      var x = document.getElementById("historyRefundRequest");
+      if (x.style.display === "none") {
+          x.style.display = "table-row";
+      } else {
+          x.style.display = "none";
+      }
+
+      var x = document.getElementById("refundRequestFields");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
     }
 
-    var x = document.getElementById("refundRequestFields");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
+    var iagreecheckbox=document.getElementById('i-agree');
+    iagreecheckbox.addEventListener('click', toggleIAgreebtn);
+
+    function toggleIAgreebtn() {
+      var iAgreeBtn = document.querySelector('.i-agree-btn');
+      iAgreeBtn.style.display = (iAgreeBtn.style.display === 'none')
+        ? 'block'
+        : 'none';
     }
-}
+
+    var iagreecheckbox=document.getElementById('i-agree');
+    iagreecheckbox.addEventListener('click', toggleIAgreebtn);
+
+    function toggleIAgreebtn() {
+      var iAgreeBtn = document.querySelector('.i-agree-btn');
+      iAgreeBtn.style.display = (iAgreeBtn.style.display === 'none')
+        ? 'block'
+        : 'none';
+    }
+
+
 
     refundDate();
 
     function refundDate() {
       var dateField = document.getElementById('refundDate');
-      dateField.innerHTML = moment().add(1, 'months').format ('01 MMM YYYY');
+      dateField.innerHTML = moment().add(1, 'months').format ('DD MMM YYYY');
     }
 
   </script>
